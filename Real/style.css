@@ -1,0 +1,98 @@
+
+
+
+li{
+  display:list-item;
+  text-align: -webkit-match-parent;
+  display: inline;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.align_center{
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+}
+
+.tp-area{
+
+}
+.tp-area .logo{
+  margin: 0 auto;
+  width: 100px;
+}
+ul, ol{
+  list-style: none;
+}
+#header{
+  background-color: #3CB371;
+  height:70px;
+
+}
+.header_wrap{
+    display: inline;
+    top: 20px;
+    right: 80px;
+    width: 300px;
+
+
+}
+.gnb{
+  float:left;
+  margin-left: 50px;
+  text-decoration: none;
+}
+.gnb_wrap{
+    float: right;
+    left: 120px;
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 50px;
+    font-family : "나눔고딕","굴림","돋움";
+    font-size: 12pt;
+
+
+}
+
+.header-loc {
+    top: 200px;
+    width: 205px;
+    height: 39px;
+    background: #fff;
+    border: none;
+    color: #000;
+  }
+
+.header-loc {
+
+  top:200px;
+    width: 200px;
+    height: 38px;
+    background: #3f3f3f;
+    color: #fff;
+}
+
+
+
+li a{
+  text-decoration: none;
+}
+body, input, textarea, select, button, table {
+    font-family: '나눔고딕',NanumGothic,'돋움',Dotum,Helvetica,sans-serif;
+    font-size: 12px;
+    color: #222;
+    letter-spacing: -.05em;
+    text-decoration: none;
+}
+.footer {
+  text-align: center;
+  font-size: 100%;
+  font-style:
+}
