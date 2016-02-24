@@ -7,4 +7,24 @@
   <meta name="viewport" content="widht=deveice-width,initial-scale=0.6">
   <title> 그 거리 뭐 있소? </title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
 </head>
+<body style="overflow: hidden; height: 100%;">
+  <header>
+    <div id="header">
+        <div class="container-fluid">
+          <div class="row-fluid">
+              <div class="span1"><img src="..." class="img-rounded"/></div>
+
+              <div class="span1 offset8">로그인</div>
+              <span class="sign_up">회원가입</span>
+              <span class="CEO_page">사장님 페이지</span>
+            </div>
+          </div>
+    </div>
+    <section class="tp-area" >
+       <div id="logo">
+         <h1><a href="localhost/Real/index.php" class="ir-el">그거리뭐있소</a></h1>
+       </div>
+  </header>

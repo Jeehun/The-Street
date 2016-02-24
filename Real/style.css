@@ -1,6 +1,36 @@
 
+#header{
+  background-color: #3CB371;
+  height:70px;
+
+}
+header .row-fluid{
+  margin-top: 20px;
+}
 
 
+
+header .tp-area h1 a {
+
+
+    width: 1600px;
+    height: 100px;
+    margin-top: 0;
+    background-image: url(https://s3.ap-northeast-2.amazonaws.com/wherestreet/WEB/Logo_01.PNG);
+    background-repeat: no-repeat;
+
+
+}
+.ir-el {
+
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 23% 100%;
+    -webkit-background-size: 23% 100%;
+    text-align: left;
+    text-indent: -9999px;
+}
 li{
   display:list-item;
   text-align: -webkit-match-parent;
@@ -15,26 +45,16 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
 }
-.align_center{
-  display:inline-block;
-  vertical-align:middle;
-  overflow:hidden;
-}
+
 
 .tp-area{
 
 }
 .tp-area .logo{
-  margin: 0 auto;
-  width: 100px;
+  margin: auto;
 }
 ul, ol{
   list-style: none;
-}
-#header{
-  background-color: #3CB371;
-  height:70px;
-
 }
 .header_wrap{
     display: inline;
