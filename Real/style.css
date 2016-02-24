@@ -6,28 +6,29 @@
 }
 header .row-fluid{
   margin-top: 20px;
+
+}
+.span1{
+  text-align: center;
+  margin-right: -60px;
 }
 
 
 
 header .tp-area h1 a {
-
-
     width: 1600px;
     height: 100px;
     margin-top: 0;
     background-image: url(https://s3.ap-northeast-2.amazonaws.com/wherestreet/WEB/Logo_01.PNG);
     background-repeat: no-repeat;
-
-
 }
 .ir-el {
 
     display: inline-block;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 23% 100%;
-    -webkit-background-size: 23% 100%;
+    background-size: 20% 100%;
+    -webkit-background-size: 20% 100%;
     text-align: left;
     text-indent: -9999px;
 }
@@ -46,13 +47,10 @@ ul, menu, dir {
     -webkit-padding-start: 40px;
 }
 
-
-.tp-area{
-
+.input-append{
+  margin-left: 10px;
 }
-.tp-area .logo{
-  margin: auto;
-}
+
 ul, ol{
   list-style: none;
 }
@@ -61,8 +59,6 @@ ul, ol{
     top: 20px;
     right: 80px;
     width: 300px;
-
-
 }
 .gnb{
   float:left;

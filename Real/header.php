@@ -9,22 +9,54 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
 
+  <script type="text/javascript">
+           $('#univ_name').live('click', function() {
+               $('#u').removeClass('selected');
+               $(this).addClass('selected');
+           })
+  </script>
+
 </head>
 <body style="overflow: hidden; height: 100%;">
   <header>
     <div id="header">
         <div class="container-fluid">
           <div class="row-fluid">
-              <div class="span1"><img src="..." class="img-rounded"/></div>
-
-              <div class="span1 offset8">로그인</div>
-              <span class="sign_up">회원가입</span>
-              <span class="CEO_page">사장님 페이지</span>
+                <div class="span1"><img src="..." class="img-rounded"/></div>
+                <div class="span1 offset7">로그인</div>
+                <div class="span1">회원가입</div>
+                <div class="span1">사장님 페이지</div>
             </div>
-          </div>
+        </div>
     </div>
     <section class="tp-area" >
-       <div id="logo">
-         <h1><a href="localhost/Real/index.php" class="ir-el">그거리뭐있소</a></h1>
+       <div class="row-fluid">
+         <h1><a href="index.php" class="ir-el">그거리뭐있소</a></h1>
        </div>
+       <div class="row-fluid">
+         <div class="span2">
+           <select class="select_univ">
+             <?php
+               require_once('connectvars.php');
+               $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+               $query = "SELECT Univ_Name FROM univ ORDER BY Univ_Name ASC";
+               $data= mysqli_query($dbc, $query);
+               while($result = mysqli_fetch_array($data)){
+                 echo '<option>'.$result['Univ_Name'].'</option><br/>';
+               }
+               mysqli_close($dbc);
+               ?>
+            </select>
+            </div>
+            <div class="span3">
+            <div class="input-append">
+              <input class="span10" id="appendedInputButton" placeholder="상호명검색" type="text">
+              <button class="btn" type="button">Go!</button>
+            </div>
+          </div>
+          </div>
+
+
+
+    </section>
   </header>
