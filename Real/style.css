@@ -14,7 +14,9 @@ header .row-fluid{
 }
 
 
-
+.thumbnails{
+  text-align: center;
+}
 header .tp-area h1 a {
     width: 1600px;
     height: 100px;

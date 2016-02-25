@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kor" style="overflow: hidden; height: 100%;">
+<html lang="kor" >
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +8,33 @@
   <title> 그 거리 뭐 있소? </title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-  <script type="text/javascript">
-           $('#univ_name').live('click', function() {
-               $('#u').removeClass('selected');
-               $(this).addClass('selected');
-           })
-  </script>
+    <script type="text/javascript">
+             var tmp1, tmp2;
+             function Univ_Choice(e){
+              if(e.options[e.selectedIndex].value) {
+                tmp1 = e.options[e.selectedIndex].text;
+                tmp2 = e.options[e.selectedIndex].value;
+                alert(tmp1);
+              }
+             }
+    </script>
+    <script type="text/javascript">
+
+      function fn_street_cate01(e){
+        console.log(e);
+        var loc = e+'.php';
+        location.href = loc+'?tmp1='+tmp1;
+
+    }
+
+    </script>
 
 </head>
-<body style="overflow: hidden; height: 100%;">
+
+
+<body >
   <header>
     <div id="header">
         <div class="container-fluid">
@@ -35,7 +52,7 @@
        </div>
        <div class="row-fluid">
          <div class="span2">
-           <select class="select_univ">
+           <select class="select_univ" onchange="Univ_Choice(this);">
              <?php
                require_once('connectvars.php');
                $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
