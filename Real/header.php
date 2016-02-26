@@ -17,6 +17,8 @@
                 tmp1 = e.options[e.selectedIndex].text;
                 tmp2 = e.options[e.selectedIndex].value;
                 alert(tmp1);
+              }else{
+                temp1 ='가천대학교';
               }
              }
     </script>
