@@ -40,8 +40,14 @@
         <div class="container-fluid">
           <div class="row-fluid">
                 <div class="span1"><img src="..." class="img-rounded"/></div>
-                <div class="span1 offset7">로그인</div>
-                <div class="span1">회원가입</div>
+                <div class="span1 offset7">
+                  <?php
+                  if(isset($_SESSION['user_name'])){
+                    echo $_SESSION['user_name'].'님';
+                  }else{
+                    echo '<a href="login.php">로그인</a></div>';
+                  }?>
+                <div class="span1"><a href="signup.php">회원가입</div>
                 <div class="span1">사장님 페이지</div>
             </div>
         </div>
