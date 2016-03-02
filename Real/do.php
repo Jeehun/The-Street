@@ -24,7 +24,7 @@
   while($result2 = mysqli_fetch_array($data)){
   ?>
     <li class="span3">
-      <div class="thumbnail">
+      <div class="thumbnail" onclick="index.php">
         <img src="<?php echo IMAGE_PATH.$Univ_Name.'/'.$result2['Store_Picture'].'.png';?>" width="150" height="300" alt="이미지"
          class = "store_pic">
         <h4><?php echo trim($result2['Store_Name']); ?></h4>

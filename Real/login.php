@@ -59,7 +59,7 @@
       <label for="user_id">아이디:</label>
       <input type="text" name="user_id" value="<?php if (!empty($user_id)) echo $user_id; ?>" /><br />
       <label for="password">비밀번호:</label>
-      <input type="password" name="user_pw" />
+      <input type="password" name=" _pw" />
     </fieldset>
     <input type="submit" value="Log In" name="submit" />
   </form>

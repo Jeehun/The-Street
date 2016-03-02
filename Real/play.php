@@ -1,4 +1,6 @@
 <?php
+
+  $page_title = '놀거리';
   require_once('header.php');
   require_once('connectvars.php');
   require_once('appvars.php');
